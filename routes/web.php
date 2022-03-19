@@ -69,8 +69,26 @@ Route::get('/logout', 'Auth\LoginController@logout')->name('user.logout')->middl
 
 Route::get('coming-soon', function(){return view('comingsoon');})->name('soon');
 Route::post('coming-soon', 'ComingSoonController@saveUser');
+Route::get('chart',  'ChartController@viewform');
+Route::post('chart/submit',  'ChartController@submitform')->name('chart');
 
-Route::get('storage/app/public/{filename}', function ($filename)
+Route::get('storage/app/{filename}', function ($filename)
+{
+    $path = storage_path($filename);
+
+    if (!File::exists($path)) {
+        abort(404);
+    }
+
+    $file = File::get($path);
+    $type = File::mimeType($path);
+
+    $response = Response::make($file, 200);
+    $response->header("Content-Type", $type);
+
+    return $response;
+})->name('get_video')->middleware('auth:admin');
+Route::get('storage/app/{filename}', function ($filename)
 {
     $path = storage_path($filename);
 

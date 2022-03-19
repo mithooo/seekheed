@@ -56,6 +56,7 @@ class FileHelper
         $object = new stdClass();
         $object->name = 'File-'. uniqid();
         $object->handle = $file->storeAs('videos',$fileName);
+        
         return $object->handle;
     }
     
