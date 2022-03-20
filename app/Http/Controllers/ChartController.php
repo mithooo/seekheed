@@ -14,7 +14,7 @@ use Prokerala\Common\Api\Exception\RateLimitExceededException;
 use Prokerala\Common\Api\Exception\ValidationException;
 use GuzzleHttp\Client as PsrHttpClient;
 use Illuminate\Support\Facades\Auth;
-use Nyholm\Psr7\Factory\Psr17Factory;
+use Nyholm\Psr7\src\Factory\Psr17Factory;
 use Prokerala\Common\Api\Authentication\Oauth2;
 use Prokerala\Common\Api\Client;
 
