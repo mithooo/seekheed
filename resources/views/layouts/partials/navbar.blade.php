@@ -9,6 +9,7 @@
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
                 <!-- Button trigger modal -->
                 <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="{{route('class.dashboard')}}" >Class</a></li>
+                <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="http://test.seekheed.com/home" >Music</a></li>
                 <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="" data-toggle="modal" data-target="#exampleModal">Doante</a></li>
                 <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="{{route('front.services')}}" >Our Services</a></li>
                 <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="#about">About</a></li>
