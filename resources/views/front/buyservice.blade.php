@@ -15,15 +15,15 @@
                 <div class="card-group mt-4">
                     <div class="card">
                         <div class="card-body p-4">
-                            <form method="post" action="#">
+                            <form method="POST" action="{{route('buyservice')}}">
                                 @csrf
-                                <h2 class="text-center">Looking For Travel Consultation</h2>
-
+                                <h2 class="text-center">Looking For {{$service}}</h2>
+                                <br>
                                 <div class="form-group row">
                                     <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                                     <div class="col-md-6">
-                                        <input type="hidden" name="service_name" value="">
+                                        <input type="hidden" name="service_name" value="{{$service}}">
                                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                         @error('email')
@@ -38,7 +38,7 @@
                                     <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Details') }}</label>
 
                                     <div class="col-md-6">
-                                        <textarea name="message" id="" cols="50" rows="10"></textarea>
+                                        <textarea name="message" id="" cols="49" rows="9"></textarea>
 
                                   
                                 

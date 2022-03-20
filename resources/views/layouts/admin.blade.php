@@ -174,7 +174,17 @@
 										<span class="menu-text">View Calendar<span class="badge badge-danger ml-3"></span></span>
 									</a>
 								</li>
-									
+								<li class="menu-section">
+									<h4 class="menu-text">Service</h4>
+									<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
+								</li>
+								<li class="menu-item {{Request::is('admin/service/index')?'menu-item-active':''}}" aria-haspopup="true">
+									<a href="{{route('admin.service.index')}}" class="menu-link">
+										<i class="menu-icon flaticon2-indent-dots
+										"></i>
+										<span class="menu-text">All Requests<span class="badge badge-danger ml-3"></span></span>
+									</a>
+								</li>
 							</ul>
 							<!--end::Menu Nav-->
 						</div>

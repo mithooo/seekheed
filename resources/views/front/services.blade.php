@@ -94,7 +94,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
           quae?
         </p>
-        <a href="{{route('service.index')}}" class="btn btn-danger">Get Started</a>
+        <a href="{{ route('service',['Travel Consultation']) }}" class="btn btn-danger">Get Started</a>
 
       </div>
       <div class="service">
@@ -104,7 +104,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
           quae?
         </p>
-        <a href="" class="btn btn-danger">Get Started</a>
+        <a href="{{ route('service',['Brand Ambassador']) }}" class="btn btn-danger">Get Started</a>
 
       </div>
       <div class="service">
@@ -114,7 +114,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
           quae?
         </p>
-        <a href="" class="btn btn-danger">Get Started</a>
+        <a href="{{ route('service',['Construction Consultantion']) }}" class="btn btn-danger">Get Started</a>
 
       </div>
       <div class="service">
@@ -124,7 +124,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
           quae?
         </p>
-        <a href="" class="btn btn-danger">Get Started</a>
+        <a href="{{ route('service',['Music Promotion']) }}" class="btn btn-danger">Get Started</a>
 
       </div>
       <div class="service">
@@ -134,7 +134,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
           quae?
         </p>
-        <a href="" class="btn btn-danger">Get Started</a>
+        <a href="{{ route('service',['Brand Identity Consultantion']) }}" class="btn btn-danger">Get Started</a>
 
       </div>
       <div class="service">
@@ -144,7 +144,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
           quae?
         </p>
-        <a href="" class="btn btn-danger">Get Started</a>
+        <a href="{{ route('service',['Graphic Design']) }}" class="btn btn-danger">Get Started</a>
 
       </div>
       <div class="service">
@@ -154,7 +154,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
           quae?
         </p>
-        <a href="" class="btn btn-danger">Get Started</a>
+        <a href="{{ route('service',['Web Design']) }}" class="btn btn-danger">Get Started</a>
     </div>
      
     </div>

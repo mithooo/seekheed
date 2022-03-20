@@ -115,10 +115,12 @@ Route::get('storage/app/{filename}', function ($filename)
             Route::resource('book', 'BookController');
             Route::resource('lecture', 'LectureController');
             Route::resource('event', 'EventController');
+            Route::resource('service', 'ServiceController');
         });
     });
     //// Admin Routes ///
-    Route::resource('service', 'Service\ServiceController');
+    Route::get('service/{service}', 'Service\ServiceController@viewdetail')->name('service');
+    Route::post('service/store', 'Service\ServiceController@buyservice')->name('buyservice');
     Route::group(['prefix' => 'class', 'namespace' => 'Learn', 'as' => 'class.',], function () {
       
         Route::group(['middleware' => 'auth:web'], function () {
