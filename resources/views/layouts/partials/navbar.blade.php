@@ -8,14 +8,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
                 <!-- Button trigger modal -->
-                <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="{{route('class.dashboard')}}" >Class</a></li>
-                <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="http://test.seekheed.com/home" >Music</a></li>
-                <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="" data-toggle="modal" data-target="#exampleModal">Doante</a></li>
+                <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="{{route('ads')}}">Info/Ads</a></li>
+                <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="{{route('class.dashboard')}}" >Library</a></li>
+                <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="http://store.seekheed.com/en/store" >Store</a></li>
+                <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="http://test.seekheed.com" >Music</a></li>
+                <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="" data-toggle="modal" data-target="#exampleModal">Donate</a></li>
                 <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="{{route('front.services')}}" >Our Services</a></li>
-                <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="#about">About</a></li>
+                {{-- <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="#about">About</a></li> --}}
                 <!-- <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="#services">Services</a></li>
                 <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="#portfolio">Portfolio</a></li> -->
-                <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="#contact">Contact</a></li>
+                {{-- <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="#contact">Contact</a></li> --}}
                 @guest
                 <li class="nav-item d-flex">
                     @if (request()->is('sign_in'))
@@ -32,6 +34,9 @@
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('front.profile') }}">
+                            {{ __('Profile') }}
+                        </a>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                                          document.getElementById('logout-form').submit();">

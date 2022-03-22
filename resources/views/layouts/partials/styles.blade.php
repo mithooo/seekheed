@@ -8,6 +8,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="{{asset('public/resource')}}/css/styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="{{asset('public/resource/slider/slick.css')}}">
+<link rel="stylesheet" href="{{asset('public/resource/slider/slick-theme.css')}}">
 <link rel="stylesheet" href="{{asset('public/assets/css/toastr.css')}}" type="text/css">
 
 
@@ -27,6 +29,17 @@
         bottom: 2%;
         right: 5%;
         z-index: 99999;
+    }
+    .slick-slide {
+        margin: 0 17px!important;
+    }
+    /* the parent */
+    .slick-list {
+        margin: 0 -17px!important;
+    }
+
+    .slick-arrow::before {
+        color: #dd003f!important;
     }
 </style>
 

@@ -6,6 +6,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 <!-- Core theme JS-->
 <script src="{{asset('public/resource')}}/js/scripts.js"></script>
+<script src="{{asset('public/resource/slider/slick.js')}}"></script>
 <script src="{{asset('public/assets/js/toastr.js')}}"></script>
     
         @toastr_render

@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('comingsoon');
 });
 
+Route::get('ads', function() {
+    return view('ads');
+})->name('ads');
+
 Route::view('/cont','front.buyservice');
 
 // sign in
