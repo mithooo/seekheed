@@ -133,6 +133,7 @@ Route::get('storage/app/{filename}', function ($filename)
             Route::resource('book', 'BookController');
             Route::resource('lecture', 'LectureController');
             Route::resource('event', 'EventController');
+            Route::view('world','class.map');
         });
     });
 
