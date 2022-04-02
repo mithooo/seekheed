@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Route;
+use Whoops\Run;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,7 +52,7 @@ Route::get('profile', function() {
 // profile confidential
 Route::get('profile_confidential', function() {
     return view('front.confidential_profile');
-})->name('front.profile_confidential');
+})->name('front.profile_conf');
 
 
 // sign in Invalid search
@@ -75,6 +76,7 @@ Route::get('coming-soon', function(){return view('comingsoon');})->name('soon');
 Route::post('coming-soon', 'ComingSoonController@saveUser');
 Route::get('chart',  'ChartController@viewform');
 Route::post('chart/submit',  'ChartController@submitform')->name('chart');
+Route::get('/google', 'GoogleController@courses');
 
 Route::get('storage/app/{filename}', function ($filename)
 {

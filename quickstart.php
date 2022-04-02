@@ -28,12 +28,11 @@ if (php_sapi_name() != 'cli') {
 function getClient()
 {
     $client = new Google_Client();
-    $client->setApplicationName('Google Classroom API PHP Quickstart');
+    $client->setApplicationName('Google Classroom API PHP');
     $client->setScopes(Google_Service_Classroom::CLASSROOM_COURSES_READONLY);
     $client->setAuthConfig('credentials.json');
     $client->setAccessType('offline');
     $client->setPrompt('select_account consent');
-
     // Load previously authorized token from a file, if it exists.
     // The file token.json stores the user's access and refresh tokens, and is
     // created automatically when the authorization flow completes for the first
@@ -90,6 +89,7 @@ if (count($results->getCourses()) == 0) {
 } else {
   print "Courses:\n";
   foreach ($results->getCourses() as $course) {
+    dd($course);
     printf("%s (%s)\n", $course->getName(), $course->getId());
   }
 }

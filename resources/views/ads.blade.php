@@ -1,8 +1,8 @@
 @extends('layouts.master')
 @section('content')
 <div class="bg-light">
-    <div class="container pt-5 mt-5">
-        <div class="row pt-4">
+    <div class="container mt-5">
+        <div class="row ">
             <div class="col-md-12">
                 <h3 class="mt-0 text-center">Top Members!</h3>
                 <hr class="divider my-2"/>

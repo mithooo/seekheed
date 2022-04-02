@@ -10,7 +10,7 @@
                     Enter you email and see if anyone you know is already connected.
                 </p>
                 <div class="d-flex">
-                    <form action="{{route('front.profile')}}" method="get" class="m-auto d-flex">
+                    <form action="#"  class="m-auto d-flex">
                         <div class="input-group mr-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">
@@ -176,20 +176,20 @@
                         </div>
                         <div class="card-footer p-4">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-4">
                                     <a href="{{route('fb_login')}}" class="btn btn-block btn-info">
                                         <span><i class="fab fa-facebook"></i> </span>
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-4">
                                     <a href="{{route('g_login')}}" class="btn btn-block btn-danger">
                                         <span><i class="fab fa-google"></i> </span>
                                     </a>
                                 </div>
-                            {{-- <div class="col-4">
+                            <div class="col-4">
                                 <button class="btn btn-block btn-info" type="button"><span><i class="fab fa-twitter"></i> </span></button>
                                 </div>
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                 </div>

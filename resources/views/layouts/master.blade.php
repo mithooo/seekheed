@@ -12,7 +12,12 @@
     <body id="page-top position-relative">
 
         {{-- navbar --}}
+        @if (request()->is('profile') ||request()->is('profile_confidential') )
+        @include('layouts.partials.navbar_prof')
+        @else
         @include('layouts.partials.navbar')
+        @endif
+       
 
         {{-- main content --}}
 

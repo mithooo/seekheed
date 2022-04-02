@@ -177,6 +177,12 @@
 										</a>
 										
 									</li>
+									<li class="menu-item {{Request::is('class/world')?'menu-item-open menu-item-here':''}} menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
+										<a href="{{url('class/world')}}" class="menu-link">
+											<span class="menu-text">World Clock & Map</span>
+										</a>
+										
+									</li>
 								
 								
 								

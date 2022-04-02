@@ -140,10 +140,10 @@
             <a class="social-button instagram d-flex" href="https://www.instagram.com/seekheed" target="_blank"><i class="fab fa-instagram m-auto"></i></a>
         </div>
         <div class="col-md-1 col-sm-2 col-2">
-            <a class="social-button linkedin d-flex " style="padding: 10px;" href="https://www.snapchat.com/add/seekheed" target="_blank"><img src="{{asset('public/resource/assets/img/icons/snap1.png')}}" alt=""></a>
+            <a class="social-button linkedin d-flex " style="padding: 3px;" href="https://www.snapchat.com/add/seekheed" target="_blank"><img src="{{asset('public/resource/assets/img/icons/snap1.png')}}" alt=""></a>
         </div>
         <div class="col-md-1 col-sm-2 col-2">
-            <a class="social-button twitter d-flex " style="padding: 10px;" href="https://www.tiktok.com/@seekheed?lang=en" target="_blank"><img src="{{asset('public/resource/assets/img/icons/tiktok.png')}}" alt=""></a>
+            <a class="social-button twitter d-flex " href="https://www.tiktok.com/@seekheed?lang=en" target="_blank"><img src="{{asset('public/resource/assets/img/icons/tiktok.png')}}" alt=""></a>
         </div>
     </div>
 </footer>
