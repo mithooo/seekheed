@@ -10,6 +10,7 @@
                 <!-- Button trigger modal -->
                 <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="{{route('ads')}}">Info/Ads</a></li>
                 <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="{{route('class.dashboard')}}" >Library</a></li>
+                <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="{{route('courses')}}" >Courses</a></li>
                 <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="http://store.seekheed.com/en/store" >Store</a></li>
                 <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="http://test.seekheed.com" >Music</a></li>
                 <li class="nav-item d-flex"><a class="nav-link my-auto js-scroll-trigger" href="" data-toggle="modal" data-target="#exampleModal">Donate</a></li>

@@ -76,7 +76,7 @@ Route::get('coming-soon', function(){return view('comingsoon');})->name('soon');
 Route::post('coming-soon', 'ComingSoonController@saveUser');
 Route::get('chart',  'ChartController@viewform');
 Route::post('chart/submit',  'ChartController@submitform')->name('chart');
-Route::get('/google', 'GoogleController@courses');
+Route::get('/courses', 'GoogleController@courses')->name('courses');
 
 Route::get('storage/app/{filename}', function ($filename)
 {
