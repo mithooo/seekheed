@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use DateTimeImmutable;
 use DateTimeZone;
 use Illuminate\Http\Request;
@@ -32,6 +33,13 @@ class ChartController extends Controller
         return view('chartform')->with('datetime', $datetime);
     }
 
+    public function userchart()
+    {
+        $user = Auth::user();
+       $chart = $user->birthchart;
+        return view('class.chart')->with('chart', $chart);
+    }
+
     public function submitform(Request $request)
     {
 
@@ -59,6 +67,11 @@ class ChartController extends Controller
             $method = new Chart($client);
             $method->setAyanamsa($ayanamsa);
             $result = $method->process($location, $datetime, $chart_type, $chart_style);
+            $user = User::find(Auth::user()->id);
+            $user->update([
+                'birthchart'=> $result
+            ]);
+            
         } catch (ValidationException $e) {
             $errors = $e->getValidationErrors();
         } catch (QuotaExceededException $e) {

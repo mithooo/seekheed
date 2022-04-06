@@ -136,9 +136,10 @@ Route::get('storage/app/{filename}', function ($filename)
             Route::resource('lecture', 'LectureController');
             Route::resource('event', 'EventController');
             Route::view('world','class.map');
+            Route::get('birthchart','ChartController@userchart')->name('birthchart');
         });
     });
-
+    Route::get('birthchart','ChartController@userchart')->name('birthchart')->middleware('auth:web');
 
 
 

@@ -77,7 +77,7 @@
                 </div>
 
                 <div class="card m-3 p-2 mt-5">
-                    <video src="{{ asset('public/resource') }}/assets/img/videos/video.mp4" controls="true"
+                    <video src="{{asset('public/coming')}}/mp4/bg1.mp4" controls="true"
                         autoplay="true"></video>
                 </div>
             </div>

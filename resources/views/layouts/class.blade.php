@@ -183,6 +183,12 @@
 										</a>
 										
 									</li>
+									<li class="menu-item {{Request::is('birthchart')?'menu-item-open menu-item-here':''}} menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
+										<a href="{{route('birthchart')}}" class="menu-link">
+											<span class="menu-text">Birthchart</span>
+										</a>
+										
+									</li>
 								
 								
 								

@@ -189,25 +189,49 @@
                 <hr class="divider my-2" style="margin: 0;"/>
                 <div class="links pl-2 mt-3">
                     <div class="mt-2">
-                        <a href="instagrok.com">instagrok.com</a>
+                        <a target="_blank"  href="https://instructables.com">instructables.com</a>
                     </div>
                     <div class="mt-2">
-                        <a href="storybird.com">storybird.com</a>
+                        <a target="_blank" href="https://www.quiverquant.com/">quiverquant.com</a>
                     </div>
                     <div class="mt-2">
-                        <a href="type.com">type.com</a>
+                        <a target="_blank" href="https://hemingwayapp.com">hemingwayapp.com</a>
                     </div>
                     <div class="mt-2">
-                        <a href="easel.ly">easel.ly</a>
+                        <a target="_blank" href="https://wifimap.io">wifimap.io</a>
                     </div>
                     <div class="mt-2">
-                        <a href="learnzillion.com">learnzillion.com</a>
+                        <a target="_blank" href="https://renderforest.com">renderforest.com</a>
                     </div>
                     <div class="mt-2">
-                        <a href="canva.com">canva.com</a>
+                        <a target="_blank" href="https://importyeti.com">importyeti.com</a>
                     </div>
                     <div class="mt-2">
-                        <a href="iorad.com">iorad.com</a>
+                        <a target="_blank" href="https://vocalremover.org">vocalremover.org</a>
+                    </div>
+                    <div class="mt-2">
+                        <a target="_blank" href="https://roomstyler.com">roomstyler.com</a>
+                    </div>
+                    <div class="mt-2">
+                        <a target="_blank" href="https://Descript.com">Descript.com</a>
+                    </div>
+                    <div class="mt-2">
+                        <a target="_blank" href="https://practity.com">practity.com</a>
+                    </div>
+                    <div class="mt-2">
+                        <a target="_blank" href="https://photopea.com">photopea.com</a>
+                    </div>
+                    <div class="mt-2">
+                        <a target="_blank" href="https://musclewiki.com">musclewiki.com</a>
+                    </div>
+                    <div class="mt-2">
+                        <a target="_blank" href="https://alternativeto.net">alternativeto.net</a>
+                    </div>
+                    <div class="mt-2">
+                        <a target="_blank" href="https://tinywow.com">tinywow.com</a>
+                    </div>
+                    <div class="mt-2">
+                        <a target="_blank" href="https://quintly.com">quintly.com</a>
                     </div>
                 </div>
             </div>
